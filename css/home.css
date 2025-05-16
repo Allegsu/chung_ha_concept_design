@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Brittany Signature'; 
+    src: url('../media/fonts/BrittanySignature.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: italic;
+}
+.BrittanyFontRed {
+    font-family: 'Brittany Signature', Georgia, sans-serif; 
+    font-size: 2.6rem;
+    animation: textBrightenR 4s infinite alternate; 
+    position: absolute;
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 25, 25, 0.9);
+    left: 18%;
+    top: 3%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Brittany Signature', Georgia, sans-serif; 
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #2b2121 23%, #000 95%);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+.navbar .logo a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: red;
+}
+.navbar .links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+.navbar .links a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    transition: 0.2s ease;
+}
+.navbar .links a:hover{
+    color: #fff;
+}

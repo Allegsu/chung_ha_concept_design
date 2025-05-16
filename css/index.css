@@ -1,0 +1,123 @@
+/* Key Frames */
+@keyframes textBrighten {
+    100%{
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+        color: white;
+    }
+}
+@keyframes textBrightenR {
+    0%{
+        text-shadow: none;
+        color: rgb(145, 6, 6);
+    }
+    100%{
+        text-shadow: 0 0 10px rgba(255, 4, 4, 0.9);
+        color: red;
+    }
+}
+/* Fonts */
+@font-face {
+    font-family: 'Brittany Signature'; 
+    src: url('../media/fonts/BrittanySignature.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: italic;
+}
+.BrittanyFontS{
+    font-family: 'Brittany Signature', Georgia, sans-serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+}
+.BrittanyFontS:hover{
+    animation: textBrighten 0.3s forwards;
+}
+
+.BrittanyFontRed {
+    font-family: 'Brittany Signature', Georgia, sans-serif; 
+    font-size: 2.6rem;
+    animation: textBrightenR 4s infinite alternate; 
+    position: absolute;
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 25, 25, 0.9);
+    left: 18%;
+    top: 3%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+    overflow: hidden;
+}
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+/* Video */
+.videoI{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    min-height: 100%;
+}
+/* Container */
+.container{
+    padding: 48px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.container-buttons{
+    margin-top: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.container-btn{
+    width: 150px;
+    height: auto;
+    border: none;
+    background: transparent;
+    color: #ece6e6;
+    font-size: 2.1rem;
+}
+/*Footer*/
+.footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 18px;
+}
+.footer-wrapper{
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 2px;
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social-media-container{
+    margin: 1rem 0rem;
+}
+.social-media-img{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 0px 2px;
+}
+a{
+    text-decoration: none;;
+}
+
