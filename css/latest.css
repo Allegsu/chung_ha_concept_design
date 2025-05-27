@@ -14,19 +14,19 @@
 /*Fonts*/
 @font-face{
     font-family: 'Brittany Signature'; 
-    src: url('../media/fonts/BrittanySignature.ttf') format('truetype'); 
+    src: url('../fonts/BrittanySignature.ttf') format('truetype'); 
     font-weight: bold;
     font-style: italic;
 }
 @font-face{
     font-family: 'Montserrat', sans-serif;
-    src: url('../media/fonts/Montserrat-ExtraLightItalic.ttf') format('truetype');
+    src: url('../fonts/Montserrat-ExtraLightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 @font-face {
     font-family: 'CormorantGaramond';
-    src: url(../media/fonts/CormorantGaramond-Regular.ttf) format('truetype');
+    src: url(../fonts/CormorantGaramond-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -136,7 +136,7 @@ a{
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: url('../media/images/chung_ha_I.jpg');
+    background-image: url('../images/page/chung_ha_I.jpg');
     background-size: cover;
     background-position: center;
 }
