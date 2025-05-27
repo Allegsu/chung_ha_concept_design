@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Brittany Signature'; 
-    src: url('../media/fonts/BrittanySignature.ttf') format('truetype'); 
+    src: url('../fonts/BrittanySignature.ttf') format('truetype'); 
     font-weight: bold;
     font-style: italic;
 }
@@ -76,6 +76,13 @@ nav img{
 }
 .menu-button{
     display: none;
+}
+.container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-self: stretch;
 }
 @media(max-width: 800px){
     .hideOnMobile{
