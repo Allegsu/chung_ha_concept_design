@@ -18,7 +18,7 @@
 /* Fonts */
 @font-face {
     font-family: 'Brittany Signature'; 
-    src: url('../media/fonts/BrittanySignature.ttf') format('truetype'); 
+    src: url('../fonts/BrittanySignature.ttf') format('truetype'); 
     font-weight: bold;
     font-style: italic;
 }
