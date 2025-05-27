@@ -8,7 +8,7 @@
 <body>
     <nav>
         <ul class="sidebar">
-            <li onclick="hideSidebar()"><a href="#"><img src="../media/images/close_wb.png"></img></a></li>
+            <li onclick="hideSidebar()"><a href="#"><img src="../../images/page/close_icon.svg"></img></a></li>
             <li><a href="../../src/components/store.html">Store</a></li>
             <li><a href="../../src/components/latest.html">Latest</a></li>
             <li><a href="../../src/components/home.html">Home</a></li>
@@ -21,6 +21,22 @@
             <li class="menu-button" onclick=showSidebar()><a href="#"><img src="../../images/page/white_dots.png"></img></a></li>
         </ul>
     </nav>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slider-1" src="../../images/page/chung_ha_phone.png" alt="Chung Ha Phone"/>
+                <img id="slider-2" src="../../images/page/chung_ha_pose1.png" alt="Chung Ha Phone"/>
+                <img id="slider-3" src="../../images/page/chung_ha_tea.png" alt="Chung Ha Phone"/>
+            </div>
+
+        <div class="slider-nav">
+            <a href="#slider-1"></a>
+            <a href="#slider-2"></a>
+            <a href="#slider-3"></a>
+        </div>
+
+        </div>
+    </section>
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
