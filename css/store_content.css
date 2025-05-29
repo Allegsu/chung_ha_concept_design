@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Brittany Signature'; 
     src: url('../fonts/BrittanySignature.ttf') format('truetype'); 
-    font-weight: bold;
-    font-style: italic;
+    font-weight: normal;
+    font-style: normal;
 }
 .BrittanyFontRed { 
     animation: textBrightenR 4s infinite alternate;
