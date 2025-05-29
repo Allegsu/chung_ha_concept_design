@@ -22,8 +22,8 @@
     url('../fonts/BrittanySignature.ttf') format('truetype'),
     url('../fonts/BrittanySignature.woff2') format('woff2'),
     url('../fonts/BrittanySignature.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
+    font-weight: normal;
+    font-style: normal;
 }
 .BrittanyFontS{
     font-family: 'BrittanySignature', Georgia, sans-serif;
