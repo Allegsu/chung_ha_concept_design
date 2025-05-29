@@ -17,13 +17,16 @@
 }
 /* Fonts */
 @font-face {
-    font-family: 'Brittany Signature'; 
-    src: url('../fonts/BrittanySignature.ttf') format('truetype'); 
+    font-family: 'BrittanySignature'; 
+    src: 
+    url('../fonts/BrittanySignature.ttf') format('truetype'),
+    url('../fonts/BrittanySignature.woff2') format('woff2'),
+    url('../fonts/BrittanySignature.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 .BrittanyFontS{
-    font-family: 'Brittany Signature', Georgia, sans-serif;
+    font-family: 'BrittanySignature', Georgia, sans-serif;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
 }
 .BrittanyFontS:hover{
@@ -31,7 +34,7 @@
 }
 
 .BrittanyFontRed {
-    font-family: 'Brittany Signature', Georgia, sans-serif; 
+    font-family: 'BrittanySignature', Georgia, sans-serif; 
     font-size: 2.6rem;
     animation: textBrightenR 4s infinite alternate; 
     position: absolute;
