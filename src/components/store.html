@@ -21,22 +21,46 @@
             <li class="menu-button" onclick=showSidebar()><a href="#"><img src="../../images/page/white_dots.png"></img></a></li>
         </ul>
     </nav>
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slider-1" src="../../images/page/chung_ha_phone.png" alt="Chung Ha Phone"/>
-                <img id="slider-2" src="../../images/page/chung_ha_pose1.png" alt="Chung Ha Phone"/>
-                <img id="slider-3" src="../../images/page/chung_ha_tea.png" alt="Chung Ha Phone"/>
-            </div>
-
-        <div class="slider-nav">
-            <a href="#slider-1"></a>
-            <a href="#slider-2"></a>
-            <a href="#slider-3"></a>
+    <div class="wrapper">
+        <div class="container-store">
+            <input type="radio" name="slide" id="c1" >
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                            <h4>Chung Ha</h4>
+                            <p>
+                                Check out the latest of Chung Ha
+                            </p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2" >
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                            <h4>Chung Ha - Album</h4>
+                            <p>
+                                Check out the new album Alivio!
+                            </p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3" >
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon">3</div>
+                        <div class="description">
+                            <h4>Chung Ha - KeyChain</h4>
+                            <p>
+                                Check out ChungHa's souvernir
+                            </p>
+                        </div>
+                    </div>
+                </label>
         </div>
-
-        </div>
-    </section>
+    </div>
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
