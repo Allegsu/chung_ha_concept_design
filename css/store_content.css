@@ -31,6 +31,7 @@
     text-shadow: 0 0 10px rgba(255, 25, 25, 0.9);
 }
 body, html {
+    height: auto;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -45,12 +46,14 @@ body {
     background-position: center;
     font-family: 'Brittany Signature', Georgia, sans-serif;
     box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
 }
 /*Header*/
 .hero-header {
-  height: 35vh;
+  height: 45vh;
   width: 100%;
-  background: linear-gradient(to bottom, #400707 23%, #600202 95%);
+  background-image: linear-gradient(to bottom, #870000, #190a05);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -184,8 +187,9 @@ nav img{
 /*Store Slider*/
 .wrapper{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -259,16 +263,125 @@ input:checked + label .description{
     transform: translateY(0) !important;
 }
 .card[for="c1"]{
-    background-image: url('../images/store/BOMH.png');
+    background-image: url('../images/page/chung_ha_tea.png');
     background-position: center center;
 }
 .card[for="c2"]{
-    background-image: url('../images/page/alivio-cover.jpg');
+    background-image: url('../images/page/chung_ha_glasses.jpg');
     background-position: center center;
 }
 .card[for="c3"]{
-    background-image: url('../images/page/chung_ha_wall.png');
+    background-image: url('../images/page/chung_ha_scream.png');
 }
+/*Main Content*/
+.main{
+    background-image: linear-gradient(to bottom, #0d0d0d 0%, black 100%);
+    padding-bottom: 60px
+}
+.tabs-wrapper{
+    padding-top: 30px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.tab-button {
+  position: relative; 
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ccc;
+  border-bottom: none; 
+}
+
+.tab-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px; 
+  height: 3px;  
+  background: transparent;
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+
+.tab-button.active::after,
+.tab-button:hover::after {
+  background: white; 
+  color: white;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  color: white; 
+}
+.tab-content img {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+.tab-content p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Raleway';
+}
+.tab-content a{
+    text-decoration: none;
+}
+/*Footer*/
+.footer-container{
+    margin-top: 48px;
+    padding-bottom: 32px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+}
+.footer-1{
+    flex-direction: row;
+    padding-bottom: 36px;
+    margin-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.footer-info {
+    width: 100%;
+    white-space: pre-line;
+    flex: 1 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: normal; 
+    text-align: justify; 
+}
+.footer-terms {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 4px 16px;
+    justify-content: center; 
+    border-top: 1px solid rgba(255, 255, 255, 0.195);
+}
+
+.footer-terms li{
+    max-width: 100%;
+    min-height: 32px;
+    word-break: break-all;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+                    
 @media(max-width: 800px){
     .hideOnMobile{
         display: none;
