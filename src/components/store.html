@@ -29,9 +29,9 @@
                     <div class="row">
                         <div class="icon">1</div>
                         <div class="description">
-                            <h4>[Beat of My HAART]</h4>
+                            <h4>Loyal</h4>
                             <p>
-                                ₩70,000
+                                Alivio
                             </p>
                         </div>
                     </div>
@@ -41,8 +41,8 @@
                     <div class="row">
                         <div class="icon">2</div>
                         <div class="description">
-                            <h4>Chung Ha - Alivio</h4>
-                            <p>Listen Now!</p>
+                            <h4>STRESS</h4>
+                            <p>Alivio</p>
                         </div>
                     </div>
                 </label>
@@ -51,9 +51,9 @@
                     <div class="row">
                         <div class="icon">3</div>
                         <div class="description">
-                            <h4>Chung Ha - Membership [HAART]</h4>
+                            <h4>Even Steven (Happy Ending)</h4>
                             <p>
-                                ₩20,000
+                                Alivio
                             </p>
                         </div>
                     </div>
@@ -61,6 +61,51 @@
         </div>
     </div>
     </header>
+    <div class="main">
+            <div class="tabs-wrapper">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="1">MINI FAN MEETING</button>
+                    <button class="tab-button" data-tab="2">MEMBERSHIP</button>
+                </div>
+
+            <div class="tab-content" id="tab-content-1">
+                <img src="../../images/store/BOMH.png" alt="Image 1" />
+                    <p>[Beat of My HAART]<br>
+                    ₩70,000
+                    </p>
+            </div>
+
+            <div class="tab-content" id="tab-content-2" style="display:none;">
+                <a href="https://chungha-official.com/shop/kr/membership/5">
+                    <img src="../../images/store/haart.png" alt="Image 2" />
+                        <p>CHUNG HA | 청하 OFFICIAL MEMBERSHIP [HAART]<br>
+                        ₩20,000
+                        </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-1">
+            <div class="footer-info">
+                <p>Bussiness Name: 알렉스 <br>Representative: 나레<br>Contact Number: +776770000
+                    Address: 60, Seoul, Korea<br>Email: allegsumaga@daum.net<br>Phone: 00000
+                    ©2025 .알렉스 | Operated under FEDRA Civilian Oversight — Region: EU Zone 04. Seville, Spain
+                </p>
+                <ul class="footer-terms">
+                    <li>
+                        <a>Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a>Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a>Cookie Setttings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
@@ -70,6 +115,24 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const tabs = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+        
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.style.display = 'none');
+
+        
+        tab.classList.add('active');
+        const tabId = tab.dataset.tab;
+        document.getElementById(`tab-content-${tabId}`).style.display = 'block';
+      });
+    });
+  });
     </script>
 </body>
 </html>
