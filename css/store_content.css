@@ -381,7 +381,10 @@ input:checked + label .description{
     align-items: center;
     color: white;
 }
-                    
+.no-link-style {
+  color: inherit;
+  text-decoration: none;
+}                   
 @media(max-width: 800px){
     .hideOnMobile{
         display: none;
