@@ -1,11 +1,32 @@
+@keyframes neonPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #8e0000,
+      0 0 10px #8e0000,
+      0 0 15px #170000,
+      0 0 20px #170000;
+  }
+  50% {
+    text-shadow:
+      0 0 2px #8e0000,
+      0 0 6px #8e0000,
+      0 0 10px #170000,
+      0 0 14px #170000;
+  }
+}
 @font-face {
     font-family: 'Brittany Signature'; 
     src: url('../fonts/BrittanySignature.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');    
+    font-weight: normal;
+    font-style: normal;
+}
 .BrittanyFontRed { 
-    animation: textBrightenR 4s infinite alternate;
     color: red;
     text-shadow: 0 0 10px rgba(255, 25, 25, 0.9);
 }
@@ -16,7 +37,8 @@ body, html {
     justify-content: center;
 }
 body {
-    min-height: 100vh;;
+    min-height: 100vh;
+    padding-top: 60px;
     background: linear-gradient(to bottom, #2b2121 23%, #000 95%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,12 +46,35 @@ body {
     font-family: 'Brittany Signature', Georgia, sans-serif;
     box-sizing: border-box; 
 }
+/*Header*/
+.hero-header {
+  height: 35vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #400707 23%, #600202 95%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  padding: 4rem 0;
+}
 nav{
-    background-color: black;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 24px 8px 0;
+  background-color: black;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
 }
 nav ul{
     width: auto;
+    height: 20px;
     list-style: none;
     display: flex;
     justify-items: flex-end;
@@ -146,13 +191,17 @@ nav img{
 }
 .container-store{
     height: 400px;
-    width: 50%;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
     display: flex;
+    box-sizing: border-box;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
 }
 .card{
-    width: 80px;
+    width: 100px;
     border-radius: .75rem;
     background-size: cover;
     cursor: pointer;
@@ -170,7 +219,7 @@ nav img{
     flex-wrap: nowrap;
 }
 .card > .row > .icon{
-    background: #223;
+    background: linear-gradient(to bottom, #060000 23%, #660707 95%);
     color: white;
     border-radius: 50%;
     width: 50px;
@@ -193,7 +242,7 @@ nav img{
     transition: all .3s ease;
 }
 .description p{
-    color: #b0b0ba;
+    animation: neonPulse 2s ease-in-out infinite;
     padding-top: 5px;
 }
 .description h4{
@@ -210,13 +259,15 @@ input:checked + label .description{
     transform: translateY(0) !important;
 }
 .card[for="c1"]{
-    background-image: url('../images/page/chung_ha_wall.png');
+    background-image: url('../images/store/BOMH.png');
+    background-position: center center;
 }
 .card[for="c2"]{
     background-image: url('../images/page/alivio-cover.jpg');
+    background-position: center center;
 }
 .card[for="c3"]{
-    background-image: url('../images/page/chung_ha_car.png');
+    background-image: url('../images/page/chung_ha_wall.png');
 }
 @media(max-width: 800px){
     .hideOnMobile{
