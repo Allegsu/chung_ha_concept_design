@@ -8,7 +8,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/page/chung_ha_XII.png">
 </head>
 <body>
-    <video class="videoI" src="./media/Chung_ha_background_Resize.mp4" autoplay muted loop></video>
+    <video class="videoI" autoplay muted loop>
+        <source src="./media/chungha-mobile-b.mp4" type="video/mp4" media="(max-width: 768px)">
+        <source src="./media/chungha-desktop-b.mp4" type="video/mp4">
+    </video>
     <h1 class="BrittanyFontRed">Chung Ha</h1>
     <div class="container">
         <div class="container-banner">
@@ -56,5 +59,13 @@
             </div>
         </div>
     </div>
+    <script>
+const video = document.querySelector("video");
+video.addEventListener("loadeddata", () => {
+  console.log("✅ Loaded source:", video.currentSrc);
+});
+
+</script>
+
 </body>
 </html>
