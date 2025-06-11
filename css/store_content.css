@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-/*Header*/
+/*Header in Store*/
 .hero-header {
   height: 45vh;
   width: 100%;
@@ -58,6 +58,10 @@ body {
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   padding: 4rem 0;
+}
+/*Header in Home*/  
+.hero-header[data-type="hm"]{
+    background-image: url('../images/home/banner.png');
 }
 nav{
   position: fixed;
